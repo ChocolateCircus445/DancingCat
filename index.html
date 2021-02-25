@@ -1,0 +1,36 @@
+<html>
+<head>
+<style>
+body {
+  background: #ebf1f7;
+}
+#imdiv {
+  display: none;
+}
+#c {
+  margin-left: calc(50% - 160px);
+  margin-bottom: 50px;
+}
+#cncon {
+  max-width: fit-content;
+  margin: auto;
+}
+#bpm {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+  <canvas id="c" width="320" height="407"></canvas>
+  <div id="cncon">
+    <input type="number" step=".01" value="120" id="bpm">
+    <button id="toggleDance" onclick="toggleDance()">Start</button>
+  </div>
+  <div id="imdiv">
+  <img src="imgs/0.png" id="c0">
+  <img src="imgs/1.png" id="c1">
+  <img src="imgs/2.png" id="c2">
+  </div>
+  <script src="dance.js"></script>
+</body>
+</html>
